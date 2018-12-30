@@ -36,10 +36,10 @@ app.post('/licornes', (req, res) => {
 
   // Timer des requetes
   setInterval(async () => {
-  	apparition.countL = 1;
-  	apparition.cityL = city[Math.floor(
+    apparition.countL = 1;
+    apparition.cityL = city[Math.floor(
       Math.random() * Math.floor(city.length))];
-  	await rp(options);
+    await rp(options);
   }, 7000);
   console.log('');
   res.end('hello');
