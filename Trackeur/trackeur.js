@@ -9,7 +9,7 @@ app.post('/vilains', (req, res) => {
   if (req.body.countV === 0) {
     console.log('');
   } else {
-    console.log('Vilain pas beau apparu à ' + req.body.cityV);
+    console.log('Vilain pas beau apparu à ' + req.body.cityV.name);
   }
   console.log('');
   // Empeche le bug de la disparition de la dernière instruction !

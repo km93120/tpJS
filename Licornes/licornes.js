@@ -40,7 +40,7 @@ app.post('/licornes', (req, res) => {
     apparition.cityL = city[Math.floor(
       Math.random() * Math.floor(city.length))];
     await rp(options);
-  }, 7000);
+  }, 20000);
   console.log('');
   res.end('hello');
 });

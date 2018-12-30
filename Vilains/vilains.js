@@ -6,7 +6,11 @@ const app = express();
 app.use(bodyParser.json());
 
 const countV = 0;
-const city = ['Paris', 'Marseille', 'Nice'];
+const city = [
+  {name: 'Paris', coordinates: {latitude: 48, longitude: 2}},
+  {name: 'Marseille', coordinates: {latitude: 43, longitude: 5}},
+  {name: 'Nice', coordinates: {latitude: 43, longitude: 7}}
+];
 const random = 0;
 
 const apparition = {
@@ -34,6 +38,7 @@ app.post('/vilains', (req, res) => {
     apparition.countV = Math.floor(Math.random() * Math.floor(100));
     apparition.cityV = city[Math.floor(
       Math.random() * Math.floor(city.length))];
+    // Console.log("enemy says  : " + apparition.cityV.name)
     await rp(options);
   }, 5000);
   console.log('');
