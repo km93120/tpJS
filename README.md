@@ -32,8 +32,7 @@ You can either use [Postman](https://www.getpostman.com/apps)
 to launch the project :
 `POST`=> `192.168.99.100:6666/start`
 
-Or you can use [cURL](https://stackoverflow.com/questions/9507353
-/how-do-i-install-and-use-curl-on-windows) :
+Or you can use [cURL](https://stackoverflow.com/questions/9507353/how-do-i-install-and-use-curl-on-windows) :
 `curl -X POST 192.168.99.100:6666/start`
 
 
