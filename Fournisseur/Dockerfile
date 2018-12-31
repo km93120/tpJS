@@ -4,10 +4,12 @@ WORKDIR /usr/src/app
 
 COPY package.json .
 
-RUN yarn
+COPY package-lock.json .
+
+RUN npm install
 
 COPY . .
 
 EXPOSE 6002
 
-CMD ["yarn", "run", "docker"]
+CMD ["npm", "start"]

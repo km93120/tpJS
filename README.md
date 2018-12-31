@@ -11,7 +11,8 @@ order to install dependencies, you are not required to run these to make the
 project up and running.
 
 You should run these commands only if you wish an error-free xo report.
-We tried to clean the project by deleting all node_modules and lock files
+We tried to clean the project by deleting all node_modules and lock files,
+that attempt was unsuccessful.
 
 ```
  cd Game && npm i && cd ..
@@ -28,7 +29,7 @@ the docker daemon.
 Run `docker-compose up --build` to build the images and run the project.
 
 You can either use [Postman](https://www.getpostman.com/apps)
-to launch the project :
+to start the project :
 `POST`=> `192.168.99.100:6666/start`
 
 Or you can use [cURL](https://stackoverflow.com/questions/9507353) :
