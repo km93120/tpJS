@@ -22,7 +22,7 @@ that attempt was unsuccessful.
  cd Vilains && npm i && cd ..
  cd Heros && npm i && cd ..
 ```
-On Windows and Mac you have to launch your Docker Quickstart Terminal to start
+On Windows and Mac you have to launch your Docker Quickstart Terminal from the Docker ToolBox to start
 the docker daemon.
 - On Linux distributions you don't need to launch anything.
 
