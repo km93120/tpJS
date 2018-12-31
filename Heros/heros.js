@@ -11,8 +11,8 @@ let speed = 0;
 let mountStamina = 0;
 
 const distance = (heroLat, heroLong, cityLat, cityLong) => {
-  const deltaX = Math.pow(heroLat - cityLat, 2);
-  const deltaY = Math.pow(heroLong - cityLong, 2);
+  const deltaX = (heroLat - cityLat) ^ 2;
+  const deltaY = (heroLong - cityLong) ^ 2;
 
   return Math.sqrt(Math.abs(deltaX - deltaY));
 };
