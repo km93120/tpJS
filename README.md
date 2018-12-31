@@ -4,8 +4,9 @@
 
 ## Instructions to run project
 
-`git clone https://github.com/km93120/tpJS.git`
-`cd tpJS`
+open a terminal and run these commands:
+-`git clone https://github.com/km93120/tpJS.git`
+-`cd tpJS`
 Considering package.json file will be copied in working directory and parsed in
 order to install dependencies, you are not required to run these to make the
 project up and running.
@@ -24,8 +25,8 @@ that attempt was unsuccessful.
 ```
 On Windows and Mac you have to launch your Docker Quickstart Terminal from the Docker ToolBox to start
 the docker daemon.
-- On Linux distributions you don't need to launch anything.
 
+in your terminal :
 Run `docker-compose up --build` to build the images and run the project.
 
 You can either use [Postman](https://www.getpostman.com/apps)
